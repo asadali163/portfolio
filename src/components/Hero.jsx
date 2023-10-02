@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
           <div className="flex mt-4">
             <button className=" text-black px-4 py-2 rounded-xl mr-4 border-mn-primary border-2 hover:bg-mn-primary hover:text-white duration-300">
-              Download CV
+              See Portfolio
             </button>
             <HireMe />
           </div>
