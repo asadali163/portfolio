@@ -1,10 +1,10 @@
 import { aboutInfo } from "../data";
 import { skills } from "../data";
 import { FaDownload } from "react-icons/fa";
-import Skill from "./Skill";
+import Technology from "./Technology";
 const About = () => {
   return (
-    <section className="my-10">
+    <section className="my-16">
       <div className="align-element  grid md:grid-cols-5 gap-16">
         <div className="md:col-span-2">
           <h2 className="text-4xl font-bold text-mn-primary tracking-wide mb-4 capitalize">
@@ -21,7 +21,7 @@ const About = () => {
         {/* Start here */}
         <div className="md:col-span-3 grid grid-cols-3 gap-10 lg:grid-cols-4">
           {skills.map((skill) => {
-            return <Skill key={skill.id} {...skill} />;
+            return <Technology key={skill.id} {...skill} />;
           })}
         </div>
         {/* End here */}

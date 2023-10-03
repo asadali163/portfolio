@@ -5,7 +5,13 @@ import {
   DiBootstrap,
   DiNodejs,
 } from "react-icons/di";
-import { TbBrandNextjs, TbBrandTailwind, TbBrandFigma } from "react-icons/tb";
+import {
+  TbBrandNextjs,
+  TbBrandTailwind,
+  TbBrandFigma,
+  TbFileDescription,
+  TbSettingsCheck,
+} from "react-icons/tb";
 import { RiJavascriptFill } from "react-icons/ri";
 import {
   SiMiro,
@@ -15,6 +21,7 @@ import {
   SiMysql,
   SiSpringboot,
   SiGithub,
+  SiRobotframework,
 } from "react-icons/si";
 import { nanoid } from "nanoid";
 export const navLinks = [
@@ -127,5 +134,51 @@ export const skills = [
     id: nanoid(),
     name: "Notion",
     icon: <SiNotion className="w-24 h-24 text-black" />,
+  },
+];
+
+export const technicalSkills = [
+  {
+    id: nanoid(),
+    name: "languages",
+    icon: (
+      <TbFileDescription className="w-16 h-16  group-hover:text-mn-primary duration-300" />
+    ),
+    desc: "Work with programming languages like JavaScript, Java, Python, and SQL.",
+  },
+  {
+    id: nanoid(),
+    name: "frameworks",
+    icon: (
+      <SiRobotframework className="w-16 h-16  group-hover:text-mn-primary duration-300" />
+    ),
+    desc: "Work with frameworks like React, Next.js, Node.js, Express.js, Spring Boot, and Bootstrap, tailwind",
+  },
+  {
+    id: nanoid(),
+    name: "web performance",
+    icon: (
+      <TbSettingsCheck className="w-16 h-16   group-hover:text-mn-primary duration-300" />
+    ),
+    desc: "I'm dedicated to creating lightning-fast, responsive websites and applications. By employing techniques like image optimization, efficient code, and content caching, I ensure an exceptional user experience. My commitment to web performance enhancement is reflected in every project I undertake, delivering speed, efficiency, and user satisfaction.",
+  },
+];
+
+export const skills4 = [
+  {
+    id: nanoid(),
+    name: "Technical",
+  },
+  {
+    id: nanoid(),
+    name: "soft",
+  },
+  {
+    id: nanoid(),
+    name: "domain",
+  },
+  {
+    id: nanoid(),
+    name: "additional",
   },
 ];
