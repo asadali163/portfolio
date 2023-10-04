@@ -26,7 +26,7 @@ import {
   SiMinds,
 } from "react-icons/si";
 import { FaCreativeCommonsSamplingPlus } from "react-icons/fa";
-import { GrLanguage } from "react-icons/gr";
+import { MdLanguage } from "react-icons/md";
 import { MdOutlineDevicesOther, MdOutlineDesignServices } from "react-icons/md";
 import { BiServer } from "react-icons/bi";
 import { LuBrainCircuit } from "react-icons/lu";
@@ -144,105 +144,104 @@ export const skills = [
   },
 ];
 
-export const technicalSkills = [
-  {
-    id: nanoid(),
-    name: "languages",
-    icon: (
-      <TbFileDescription className="w-16 h-16  group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Work with programming languages like JavaScript, Java, Python, and SQL.",
-  },
-  {
-    id: nanoid(),
-    name: "frameworks",
-    icon: (
-      <SiRobotframework className="w-16 h-16  group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Work with frameworks like React, Next.js, Node.js, Express.js, Spring Boot, and Bootstrap, tailwind",
-  },
-  {
-    id: nanoid(),
-    name: "web performance",
-    icon: (
-      <TbSettingsCheck className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "I'm dedicated to creating lightning-fast, responsive websites and applications. By employing techniques like image optimization, efficient code, and content caching, I ensure an exceptional user experience. My commitment to web performance enhancement is reflected in every project I undertake, delivering speed, efficiency, and user satisfaction.",
-  },
-];
-
-export const softSkills = [
-  {
-    id: nanoid(),
-    name: "Problem Solving",
-    icon: (
-      <SiMinds className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Thrived in challenging situations by analyzing issues, identifying root causes, and implementing effective solutions. Used debugging skills to resolve complex coding problems.",
-  },
-  {
-    id: nanoid(),
-    name: "Creativity",
-    icon: (
-      <FaCreativeCommonsSamplingPlus className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Created visually appealing and interactive websites that enhance the user experience. Developed innovative solutions to complex coding issues.",
-  },
-  {
-    id: nanoid(),
-    name: "Communication",
-    icon: (
-      <GrLanguage className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Collaborated with clients to understand their needs and deliver the desired results. Communicated effectively with team members to ensure seamless project execution.",
-  },
-];
-
-export const domainSkills = [
-  {
-    id: nanoid(),
-    name: "responsive design",
-    icon: (
-      <MdOutlineDevicesOther className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Created responsive websites that function seamlessly across all devices. Ensured that websites are optimized for mobile, tablet, and desktop use.",
-  },
-  {
-    id: nanoid(),
-    name: "UI/UX principles",
-    icon: (
-      <MdOutlineDesignServices className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Applied UI/UX principles to create visually appealing and user-friendly websites. Used wireframes and prototypes to design websites that meet client requirements.",
-  },
-];
-
-export const additionalSkills = [
-  {
-    id: nanoid(),
-    name: "backend",
-    icon: (
-      <BiServer className="w-16 h-16   group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Work with backend technologies like Node.js, Express.js, Spring Boot, and MongoDB to create dynamic websites and applications.",
-  },
-  {
-    id: nanoid(),
-    name: "data science",
-    icon: (
-      <TbDeviceDesktopAnalytics className="w-16 h-16  group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Work with data science tools like Python, R, and SQL to analyze data and generate insights that drive business growth.",
-  },
-  {
-    id: nanoid(),
-    name: "deep learning",
-    icon: (
-      <LuBrainCircuit className="w-16 h-16  group-hover:text-mn-primary duration-300" />
-    ),
-    desc: "Work with deep learning frameworks like TensorFlow and Keras to build and train neural networks that can recognize patterns in data.",
-  },
-];
+export const allSkills = {
+  technical: [
+    {
+      id: nanoid(),
+      name: "languages",
+      icon: (
+        <TbFileDescription className="w-16 h-16  group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Work with programming languages like JavaScript, Java, Python, and SQL.",
+    },
+    {
+      id: nanoid(),
+      name: "frameworks",
+      icon: (
+        <SiRobotframework className="w-16 h-16  group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Work with frameworks like React, Next.js, Node.js, Express.js, Spring Boot, and Bootstrap, tailwind",
+    },
+    {
+      id: nanoid(),
+      name: "web performance",
+      icon: (
+        <TbSettingsCheck className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "I'm dedicated to creating lightning-fast, responsive websites and applications. By employing techniques like image optimization, efficient code, and content caching, I ensure an exceptional user experience. My commitment to web performance enhancement is reflected in every project I undertake, delivering speed, efficiency, and user satisfaction.",
+    },
+  ],
+  soft: [
+    {
+      id: nanoid(),
+      name: "Problem Solving",
+      icon: (
+        <SiMinds className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Thrived in challenging situations by analyzing issues, identifying root causes, and implementing effective solutions. Used debugging skills to resolve complex coding problems.",
+    },
+    {
+      id: nanoid(),
+      name: "Creativity",
+      icon: (
+        <FaCreativeCommonsSamplingPlus className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Created visually appealing and interactive websites that enhance the user experience. Developed innovative solutions to complex coding issues.",
+    },
+    {
+      id: nanoid(),
+      name: "Communication",
+      icon: (
+        <MdLanguage className="w-16 h-16 group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Collaborated with clients to understand their needs and deliver the desired results. Communicated effectively with team members to ensure seamless project execution.",
+    },
+  ],
+  domain: [
+    {
+      id: nanoid(),
+      name: "responsive design",
+      icon: (
+        <MdOutlineDevicesOther className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Created responsive websites that function seamlessly across all devices. Ensured that websites are optimized for mobile, tablet, and desktop use.",
+    },
+    {
+      id: nanoid(),
+      name: "UI/UX principles",
+      icon: (
+        <MdOutlineDesignServices className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Applied UI/UX principles to create visually appealing and user-friendly websites. Used wireframes and prototypes to design websites that meet client requirements.",
+    },
+  ],
+  additional: [
+    {
+      id: nanoid(),
+      name: "backend",
+      icon: (
+        <BiServer className="w-16 h-16   group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Work with backend technologies like Node.js, Express.js, Spring Boot, and MongoDB to create dynamic websites and applications.",
+    },
+    {
+      id: nanoid(),
+      name: "data science",
+      icon: (
+        <TbDeviceDesktopAnalytics className="w-16 h-16  group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Work with data science tools like Python, R, and SQL to analyze data and generate insights that drive business growth.",
+    },
+    {
+      id: nanoid(),
+      name: "deep learning",
+      icon: (
+        <LuBrainCircuit className="w-16 h-16  group-hover:text-mn-secondary duration-300" />
+      ),
+      desc: "Work with deep learning frameworks like TensorFlow and Keras to build and train neural networks that can recognize patterns in data.",
+    },
+  ],
+};
 
 export const skills4 = [
   {

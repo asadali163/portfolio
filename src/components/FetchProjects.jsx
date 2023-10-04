@@ -14,9 +14,11 @@ export const useFetchProjects = () => {
   const getData = async () => {
     try {
       const proj = await client.getEntries({ content_type: "portfolio" });
-      const items = proj.items[0].fields;
-      console.log(items);
+      // console.log(proj);
+      const items = proj.items.map((item) => item.fields);
+      // console.log(items);
       setLoading(false);
+      setProjects(items);
     } catch (error) {
       console.log(error);
     }
@@ -26,5 +28,5 @@ export const useFetchProjects = () => {
     getData();
   }, []);
 
-  return null;
+  return { loading, projects };
 };
