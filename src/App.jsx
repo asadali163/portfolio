@@ -6,13 +6,13 @@ import Skills from "./components/Skills";
 
 const App = () => {
   return (
-    <>
+    <main>
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
-    </>
+    </main>
   );
 };
 export default App;
