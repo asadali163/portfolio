@@ -25,12 +25,14 @@ import {
   SiRobotframework,
   SiMinds,
 } from "react-icons/si";
-import { FaCreativeCommonsSamplingPlus } from "react-icons/fa";
-import { MdLanguage } from "react-icons/md";
+import { FaCreativeCommonsSamplingPlus, FaWhatsapp } from "react-icons/fa";
+import { MdLanguage, MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineDevicesOther, MdOutlineDesignServices } from "react-icons/md";
 import { BiServer } from "react-icons/bi";
 import { LuBrainCircuit } from "react-icons/lu";
 import { nanoid } from "nanoid";
+import { FiMail } from "react-icons/fi";
+
 export const navLinks = [
   {
     id: "home",
@@ -259,5 +261,32 @@ export const skills4 = [
   {
     id: nanoid(),
     name: "additional",
+  },
+];
+
+export const contactDetails = [
+  {
+    id: nanoid(),
+    name: "whatsapp",
+    detail: "+92 3169812675",
+    icon: (
+      <FaWhatsapp className="h-4/6 w-4/6 inline-block  text-white text-3xl m-auto " />
+    ),
+  },
+  {
+    id: nanoid(),
+    name: "email",
+    detail: "asadali.cs63@gmail.com",
+    icon: (
+      <FiMail className="h-4/6 w-4/6 inline-block text-white text-3xl m-auto " />
+    ),
+  },
+  {
+    id: nanoid(),
+    name: "location",
+    detail: "Sukkur, Pakistan",
+    icon: (
+      <MdOutlineLocationOn className="h-4/6 w-4/6 inline-block text-white text-3xl m-auto" />
+    ),
   },
 ];

@@ -12,7 +12,6 @@ import { useEffect } from "react";
 const Projects = () => {
   const dispatch = useDispatch();
   const { selectedProject } = useSelector((state) => state.project);
-  console.log(selectedProject);
 
   const { loading, projects } = useFetchProjects();
   useEffect(() => {
