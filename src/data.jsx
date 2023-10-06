@@ -24,14 +24,22 @@ import {
   SiGithub,
   SiRobotframework,
   SiMinds,
+  SiLinkedin,
 } from "react-icons/si";
-import { FaCreativeCommonsSamplingPlus, FaWhatsapp } from "react-icons/fa";
+import {
+  FaCreativeCommonsSamplingPlus,
+  // FaSquareXTwitter,
+
+  // FaSquareInstagram,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { MdLanguage, MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineDevicesOther, MdOutlineDesignServices } from "react-icons/md";
 import { BiServer } from "react-icons/bi";
 import { LuBrainCircuit } from "react-icons/lu";
-import { nanoid } from "nanoid";
 import { FiMail } from "react-icons/fi";
+import { RiTwitterXFill, RiInstagramLine } from "react-icons/ri";
+import { nanoid } from "nanoid";
 
 export const navLinks = [
   {
@@ -290,3 +298,32 @@ export const contactDetails = [
     ),
   },
 ];
+
+export const socialContacts = [
+  {
+    id: nanoid(),
+    name: "github",
+    url: "https://github.com/asadali163",
+    icon: <SiGithub className="text-mn-secondary" />,
+  },
+  {
+    id: nanoid(),
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/asad-ali12/",
+    icon: <SiLinkedin className="text-mn-secondary" />,
+  },
+  {
+    id: nanoid(),
+    name: "X",
+    url: "https://www.linkedin.com/in/asad-ali12/",
+    icon: <RiTwitterXFill className="text-mn-secondary" />,
+  },
+  {
+    id: nanoid(),
+    name: "instagram",
+    url: "https://www.instagram.com/asadali3.0/",
+    icon: <RiInstagramLine className="text-mn-secondary" />,
+  },
+];
+
+export const year = new Date().getFullYear();
