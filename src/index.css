@@ -8,7 +8,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes swipe {
   0% {
     opacity: 0;
     left: -50px;
@@ -20,5 +20,5 @@
 }
 
 .fade-in {
-  animation: fadeIn 0.8s ease-in-out;
+  animation: swipe 0.8s ease-in-out;
 }

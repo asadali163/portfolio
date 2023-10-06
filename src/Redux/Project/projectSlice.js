@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   projects: [],
   selectedProject: null,
+  length: 0,
 };
 
 const projectSlice = createSlice({
@@ -11,6 +12,7 @@ const projectSlice = createSlice({
   reducers: {
     fetchProjectsOnce: (state, action) => {
       state.projects = action.payload;
+      state.length = action.payload.length;
     },
     setSelectedProject: (state, action) => {
       state.selectedProject = state.projects.find(

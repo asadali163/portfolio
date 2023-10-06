@@ -22,7 +22,7 @@ const Project = (data) => {
   return (
     <>
       <div
-        className="flex flex-col gap-1 relative "
+        className="group flex flex-col gap-1 relative rounded-lg hover:bg-mn-secondary duration-300 "
         onMouseEnter={() => handleHoverEnter(id)}
         onMouseLeave={() => handleHoverLeave()}
       >
@@ -46,10 +46,10 @@ const Project = (data) => {
           } fade-in absolute top-0 left-0 justify-center gap-4 items-center w-full `}
         >
           <a href={github}>
-            <SiGithub className="w-10 h-10 cursor-pointer hover:text-mn-primary duration-200" />
+            <SiGithub className="w-12 h-12 pt-2 cursor-pointer hover:text-mn-primary duration-200" />
           </a>
           <a href={netlify}>
-            <TbWorldWww className="w-10 h-10 cursor-pointer hover:text-mn-primary duration-200" />
+            <TbWorldWww className="w-12 h-12 pt-2 cursor-pointer hover:text-mn-primary duration-200" />
           </a>
           {/* Later on add more detail button for description which will open a modal window */}
         </div>
