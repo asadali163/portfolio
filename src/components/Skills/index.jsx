@@ -1,8 +1,8 @@
-import { skills4 } from "../data";
+import { skills4 } from "../../data";
 // import { technicalSkills } from "../data";
-import { allSkills } from "../data";
+import { allSkills } from "../../data";
 import { BsArrowRight } from "react-icons/bs";
-import Section from "./Section";
+import Section from "../General/Section";
 import { useState } from "react";
 const Skills = () => {
   const [userSkill, setUserSkill] = useState(allSkills.technical);
@@ -10,7 +10,7 @@ const Skills = () => {
     setUserSkill(allSkills[skillName.toLowerCase()]);
   };
   return (
-    <section className="bg-mn-secondary py-16">
+    <section className="bg-mn-secondary py-16" id="skills">
       <div className="align-element ">
         <Section sectionName="Skills" />
         <div className="grid gap-16">

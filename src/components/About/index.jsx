@@ -1,11 +1,11 @@
-import { aboutInfo } from "../data";
-import { skills } from "../data";
+import { aboutInfo } from "../../data";
+import { skills } from "../../data";
 import { FaDownload } from "react-icons/fa";
 import Technology from "./Technology";
-import Section from "./Section";
+import Section from "../General/Section";
 const About = () => {
   return (
-    <section className="my-16">
+    <section className="my-16" id="about">
       <div className="align-element ">
         <Section sectionName="about" />
         <div className="grid md:grid-cols-5 gap-16">

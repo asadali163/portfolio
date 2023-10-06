@@ -1,5 +1,5 @@
-import HireMe from "./HireMe";
-import { info } from "../data";
+import HireMe from ".././General/HireMe";
+import { info } from "../../data";
 const Hero = () => {
   return (
     <section className="bg-mn-secondary">
@@ -14,7 +14,14 @@ const Hero = () => {
             {info.desc}
           </p>
           <div className="flex mt-4">
-            <button className=" text-black px-4 py-2 rounded-xl mr-4 border-mn-primary border-2 hover:bg-mn-primary hover:text-white duration-300 tracking-wide">
+            <button
+              onClick={() => {
+                document
+                  .querySelector("#portfolio")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+              className=" text-black px-4 py-2 rounded-xl mr-4 border-mn-primary border-2 hover:bg-mn-primary hover:text-white duration-300 tracking-wide"
+            >
               See Portfolio
             </button>
             <HireMe />
@@ -23,7 +30,7 @@ const Hero = () => {
         {/* image */}
         <div className="flex justify-center items-center">
           <img
-            src="../../src/assets/images/portfolio-image.png"
+            src="../../../src/assets/images/portfolio-image.png"
             alt="hero"
             className="w-80 md:w-96 lg:w-2/3"
           />

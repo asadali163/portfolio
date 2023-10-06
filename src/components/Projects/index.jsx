@@ -2,10 +2,10 @@ import { useFetchProjects } from "./FetchProjects";
 // import HRow from "./HRow";
 import ProjectHeader from "./ProjectHeader";
 import Project from "./Project";
-import Section from "./Section";
-import SpinningLoader from "./SpinningLoader";
+import Section from "../General/Section";
+import SpinningLoader from "../General/SpinningLoader";
 import { useDispatch } from "react-redux";
-import { fetchProjectsOnce } from "../Redux/Project/projectSlice";
+import { fetchProjectsOnce } from "../../Redux/Project/projectSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
@@ -20,13 +20,13 @@ const Projects = () => {
   if (loading) return <SpinningLoader />;
   return (
     <section>
-      <div className="align-element my-16">
+      <div className="align-element my-16" id="portfolio">
         <Section sectionName="Projects" />
         <ProjectHeader />
-        <div className="grid md:grid-cols-5 ">
-          <div className="hidden md:block md:col-span-3 md:h-[600px]">
+        <div className="grid md:grid-cols-5 gap-10 ">
+          <div className="hidden md:block md:col-span-3 md:h-[400px]">
             {selectedProject && (
-              <div className="h-5/6 w-5/6 self-start relative rounded-2xl shadow-2xl overflow-hidden">
+              <div className="h-full w-full self-start relative rounded-2xl shadow-2xl overflow-hidden">
                 <img
                   src={selectedProject?.img}
                   alt={selectedProject?.name}

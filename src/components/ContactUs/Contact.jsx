@@ -1,10 +1,10 @@
-import Section from "../Section";
+import Section from "../General/Section";
 import { contactDetails } from "../../data";
 import DetailCard from "./DetailCard";
 import Form from "./Form";
 const Contact = () => {
   return (
-    <section className="bg-mn-secondary py-16">
+    <section className="bg-mn-secondary py-16" id="contact">
       <div className="align-element">
         <Section sectionName="contact" />
         <h2 className="text-3xl font-semibold text-center text-gr-800 capitalize mb-10">

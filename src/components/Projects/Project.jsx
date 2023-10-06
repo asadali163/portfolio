@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   setSelectedProject,
   emptySelectedProject,
-} from "../Redux/Project/projectSlice";
+} from "../../Redux/Project/projectSlice";
 import HRow from "./HRow";
 const Project = (data) => {
   const dispatch = useDispatch();

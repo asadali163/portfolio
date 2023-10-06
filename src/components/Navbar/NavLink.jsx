@@ -3,7 +3,7 @@ const NavLink = ({ id, active, setActive, title, mobile }) => {
   //   console.log(data);
   return (
     <li
-      className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-mn-primary duration-300 ${
+      className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-mn-primary hover:border-b-2 hover:border-mn-primary  ${
         active === title ? "text-mn-primary" : "text-black"
       } 
       ${

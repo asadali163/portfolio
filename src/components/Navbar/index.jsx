@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { navLinks } from "../data";
+import { navLinks } from "../../data";
 import NavLink from "./NavLink";
-import HireMe from "./HireMe";
+import HireMe from "../General/HireMe";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
