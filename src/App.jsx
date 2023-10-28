@@ -5,18 +5,28 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Modal from "./components/General/Modal";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  const { isOpen } = useSelector((state) => state.modal);
+
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <main>
+        {isOpen && <Modal />}
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+      <ToastContainer position="top-center" autoClose={2000} />
+    </>
   );
 };
 export default App;

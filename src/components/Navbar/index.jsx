@@ -12,7 +12,13 @@ const Navbar = () => {
     <nav className="bg-mn-secondary">
       <div className="align-element flex py-6 justify-between items-center navbar">
         {/* Logo */}
-        <h1 className="text-3xl text-black">Logo</h1>
+        {/* <h1 className="text-3xl text-black">Logo</h1> */}
+        {/* logo in the navbar */}
+        <img
+          src="../../../src/assets/images/logo.png"
+          alt="logo"
+          className="w-24"
+        />
 
         {/* Desktop Navigation */}
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -42,7 +48,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-blue-gray-200 `}
+            } p-6 absolute top-16 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-blue-gray-200 `}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav) => (
@@ -54,7 +60,7 @@ const Navbar = () => {
                   mobile={true}
                 />
               ))}
-              <HireMe />
+              {/* <HireMe /> */}
             </ul>
           </div>
         </div>

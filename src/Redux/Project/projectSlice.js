@@ -13,6 +13,7 @@ const projectSlice = createSlice({
     fetchProjectsOnce: (state, action) => {
       state.projects = action.payload;
       state.length = action.payload.length;
+      state.selectedProject = state.projects?.[0];
     },
     setSelectedProject: (state, action) => {
       state.selectedProject = state.projects.find(
@@ -20,7 +21,7 @@ const projectSlice = createSlice({
       );
     },
     emptySelectedProject: (state) => {
-      state.selectedProject = null;
+      state.selectedProject = state.projects[0];
     },
   },
 });

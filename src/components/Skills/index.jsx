@@ -4,11 +4,22 @@ import { allSkills } from "../../data";
 import { BsArrowRight } from "react-icons/bs";
 import Section from "../General/Section";
 import { useState } from "react";
+import { setDesc, openModal } from "../../Redux/modal/modalSlice";
+import { useDispatch } from "react-redux";
+
 const Skills = () => {
   const [userSkill, setUserSkill] = useState(allSkills.technical);
   const changeSkill = (skillName) => {
     setUserSkill(allSkills[skillName.toLowerCase()]);
   };
+
+  const dispatch = useDispatch();
+
+  const handleClick = (name, desc) => {
+    dispatch(setDesc({ name, desc }));
+    dispatch(openModal());
+  };
+
   return (
     <section className="bg-mn-secondary py-16" id="skills">
       <div className="align-element ">
@@ -40,11 +51,14 @@ const Skills = () => {
                   <h3 className="text-2xl text-gray-800 capitalize font-semibold mt-4 group-hover:text-gray-50 duration-300">
                     {skill.name}
                   </h3>
-                  <p className=" text-gray-600 mt-3 tracking-wide group-hover:text-gray-400 duration-300">{`${skill.desc.slice(
+                  <p className=" text-gray-600 mt-3 tracking-wide group-hover:text-gray-300 duration-300">{`${skill.desc.slice(
                     0,
                     75
                   )}...`}</p>
-                  <button className="self-start hover:text-mn-secondary">
+                  <button
+                    className="self-start hover:text-mn-secondary"
+                    onClick={() => handleClick(skill.name, skill.desc)}
+                  >
                     <BsArrowRight className="inline text-mn-primary group-hover:text-gray-100 duration-300" />{" "}
                     learn more
                   </button>

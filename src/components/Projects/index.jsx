@@ -24,15 +24,19 @@ const Projects = () => {
         <Section sectionName="Projects" />
         <ProjectHeader />
         <div className="grid md:grid-cols-5 gap-10 ">
-          <div className="hidden md:block md:col-span-3 md:h-[400px]">
+          <div className="hidden md:block md:col-span-3 md:h-[500px] ">
             {selectedProject && (
-              <div className="h-full w-full self-start relative rounded-2xl shadow-2xl overflow-hidden">
+              <div className="h-full w-full self-start relative rounded-2xl shadow-2xl overflow-hidden pt-[-2rem] ">
+                {/* transform transition-transform hover:scale-110 */}
                 <img
                   src={selectedProject?.img}
                   alt={selectedProject?.name}
-                  className="h-full w-full  "
+                  className="h-full w-full "
                 />
-                <div className="absolute top-0 left-0 h-full w-full"></div>
+                <div
+                  className="absolute top-0 left-0 h-full w-full"
+                  // style={{ backgroundColor: "rgba(0,0,0,0.5" }}
+                ></div>
               </div>
             )}
           </div>

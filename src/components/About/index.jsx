@@ -4,6 +4,11 @@ import { FaDownload } from "react-icons/fa";
 import Technology from "./Technology";
 import Section from "../General/Section";
 const About = () => {
+  const downloadResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1CQMJIesw2Q_J3p4xQQbVILHUtLtl3od7/view?usp=sharing"
+    );
+  };
   return (
     <section className="my-16" id="about">
       <div className="align-element ">
@@ -16,7 +21,10 @@ const About = () => {
             <p className="text-gray-800 text-md text-justify tracking-wider leading-7">
               {aboutInfo.desc}
             </p>
-            <button className="group mt-10 text-black px-4 py-2 rounded-xl border-mn-primary border-2 hover:bg-mn-primary hover:text-white duration-300 float-right tracking-wide">
+            <button
+              className="group mt-10 text-black px-4 py-2 rounded-xl border-mn-primary border-2 hover:bg-mn-primary hover:text-white duration-300 float-right tracking-wide"
+              onClick={() => downloadResume()}
+            >
               Resume
               <FaDownload className="inline-block ml-2 text-center text-mn-primary mt-[-5px] group-hover:text-white duration-300" />
             </button>
