@@ -9,9 +9,16 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Modal from "./components/General/Modal";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 const App = () => {
   const { isOpen } = useSelector((state) => state.modal);
+
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isOpen]);
 
   return (
     <>

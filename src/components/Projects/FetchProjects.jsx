@@ -16,6 +16,8 @@ export const useFetchProjects = () => {
       const proj = await client.getEntries({ content_type: "portfolio" });
       // console.log(proj);
       const items = proj.items.map((item) => item.fields);
+      // I want to sort the items of the basis of ID property.
+      items.sort((a, b) => a.id - b.id);
       // console.log(items);
       setLoading(false);
       setProjects(items);
