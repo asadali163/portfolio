@@ -48,10 +48,10 @@ const Skills = () => {
                   key={skill.id}
                 >
                   <span>{skill.icon}</span>
-                  <h3 className="text-2xl text-gray-800 capitalize font-semibold mt-4 group-hover:text-gray-50 duration-300">
+                  <h4 className="text-2xl text-gray-800 capitalize font-semibold mt-4 group-hover:text-gray-50 duration-300">
                     {skill.name}
-                  </h3>
-                  <p className=" text-gray-600 mt-3 tracking-wide group-hover:text-gray-300 duration-300">{`${skill.desc.slice(
+                  </h4>
+                  <p className=" text-gray-800 mt-3 tracking-wide group-hover:text-gray-100 duration-300">{`${skill.desc.slice(
                     0,
                     75
                   )}...`}</p>

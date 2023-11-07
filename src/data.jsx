@@ -62,8 +62,8 @@ export const navLinks = [
 
 export const info = {
   name: "Asad Ali",
-  skill: "Front-end Developer",
-  desc: "With 3 years of experience as a Front-End Developer, I specialize in  React and Next.js. My portfolio showcases efficient web projects,  and I'm ready to bring your digital concepts to life.  Let's collaborate and turn your ideas into impactful online  experiences.",
+  skill: "Full-Stack Developer",
+  desc: "With 3 years of Full-Stack Developer experience, I excel in React, Next.js, and Node.js. My portfolio showcases versatile web projects. Let's collaborate to bring your digital ideas to life and create impactful online experiences.",
 };
 
 export const aboutInfo = {

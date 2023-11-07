@@ -22,7 +22,7 @@ const Modal = () => {
             &times;
           </button>
         </div>
-        <p className="text-gray-600">{desc}</p>
+        <p className="text-gray-900">{desc}</p>
       </div>
     </aside>
   );

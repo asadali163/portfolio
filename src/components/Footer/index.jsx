@@ -12,7 +12,7 @@ const Footer = () => {
         </h3>
         <div className="flex gap-4 col-span-2 md:col-span-1 md:justify-self-end">
           {socialContacts.map((item) => {
-            const { id, url, icon } = item;
+            const { id, url, icon, name } = item;
             return (
               <a
                 key={id}
@@ -20,6 +20,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl"
+                name={name}
               >
                 {icon}
               </a>
