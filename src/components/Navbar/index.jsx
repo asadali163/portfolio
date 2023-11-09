@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { navLinks } from "../../data";
 import NavLink from "./NavLink";
 import HireMe from "../General/HireMe";
+import myImage from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -14,7 +15,7 @@ const Navbar = () => {
         {/* Logo */}
         {/* <h1 className="text-3xl text-black">Logo</h1> */}
         {/* logo in the navbar */}
-        <img src="/assets/images/logo.png" alt="logo" className="w-24" />
+        <img src={myImage} alt="logo" className="w-24" />
 
         {/* Desktop Navigation */}
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">

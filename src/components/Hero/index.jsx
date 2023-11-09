@@ -1,5 +1,6 @@
 import HireMe from ".././General/HireMe";
 import { info } from "../../data";
+import myImage from "../../assets/images/portfolio-image.png";
 const Hero = () => {
   return (
     <section className="bg-mn-secondary">
@@ -29,11 +30,7 @@ const Hero = () => {
         </div>
         {/* image */}
         <div className="flex justify-center items-center">
-          <img
-            src="/../../assets/images/portfolio-image.png"
-            alt="hero"
-            className="w-80 md:w-96 lg:w-2/3"
-          />
+          <img src={myImage} alt="hero" className="w-80 md:w-96 lg:w-2/3" />
         </div>
       </div>
     </section>
