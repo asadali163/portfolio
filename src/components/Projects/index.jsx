@@ -33,10 +33,7 @@ const Projects = () => {
                   alt={selectedProject?.name}
                   className="h-full w-full "
                 />
-                <div
-                  className="absolute top-0 left-0 h-full w-full"
-                  // style={{ backgroundColor: "rgba(0,0,0,0.5" }}
-                ></div>
+                <div className="absolute top-0 left-0 h-full w-full"></div>
               </div>
             )}
           </div>

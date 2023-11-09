@@ -12,9 +12,6 @@ const Navbar = () => {
   return (
     <nav className="bg-mn-secondary">
       <div className="align-element flex py-6 justify-between items-center navbar">
-        {/* Logo */}
-        {/* <h1 className="text-3xl text-black">Logo</h1> */}
-        {/* logo in the navbar */}
         <img src={myImage} alt="logo" className="w-24" />
 
         {/* Desktop Navigation */}

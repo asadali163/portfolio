@@ -19,6 +19,7 @@ const Project = (data) => {
     setShowLinks(false);
     dispatch(emptySelectedProject());
   };
+
   return (
     <>
       <div
